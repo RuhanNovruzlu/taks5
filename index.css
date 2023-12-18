@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@800&family=Montserrat:wght@600&family=Roboto+Slab:wght@500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
-
 * {
     margin: 0px;
     padding: 0px;
 }
-
 .contaniner {
     display: flex;
+    padding: 127px 130px 230px 135px;
+    align-items: center;
 }
-
 p {
-    padding-bottom: 17px;
+    margin-bottom: 17px;
     color: var(--Text_Dark_Accent, #EF6D58);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Epilogue;
@@ -21,12 +20,9 @@ p {
     letter-spacing: 3px;
     text-transform: uppercase;
 }
-
 h2 {
-    padding-bottom: 28px;
+    margin-bottom: 28px;
     width: 469px;
-    height: 99px;
-    flex-shrink: 0;
     color: var(--Text_Dark, #391400);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Epilogue;
@@ -35,11 +31,8 @@ h2 {
     font-weight: 800;
     line-height: 48px;
 }
-
 h3 {
     width: 470px;
-    height: 70px;
-    flex-shrink: 0;
     color: var(--Text_Dark_Gray, rgba(57, 20, 0, 0.64));
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Epilogue;
@@ -48,71 +41,55 @@ h3 {
     font-weight: 400;
     line-height: 32px;/
 }
-
 .div-2 {
-    margin: 127px 130px 215px 135px;
     width: 570px;
     height: 368px;
-    flex-shrink: 0;
     border-radius: 6px;
     opacity: 0.3181;
     background: #5C2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 130px;
 }
-
 img {
     width: 148px;
     height: 148px;
-    flex-shrink: 0;
-    padding: 110px 211px;
-}
-
-.div-3 {
-    margin-top: 187px;
-    margin-bottom: 292px;
 }
 
 /* mobil style */
 @media screen and (max-width:768px) {
     .contaniner {
         flex-direction: column;
+        align-items: center;
+        padding: 63px 23px 81px 23px;
     }
 
     p {
         font-size: 16px;
-        padding-bottom: 17px;
+        margin-bottom: 17px;
     }
 
     h2 {
-        width: 329px;
-        height: 143px;
-        flex-shrink: 0;
-
+        width: 100%;
         font-size: px;
-        padding-bottom: 16px;
+        margin-bottom: 16px;
     }
 
     h3 {
         font-size: 16px;
-        width: 329px;
-        height: 99px;
-        flex-shrink: 0;
+        width: 100%;
     }
 
     .div-2 {
-        margin: 63px 23px 24px 23px;
         width: 329px;
         height: 212px;
-        flex-shrink: 0;
+        margin: auto;
+        margin-bottom: 24px;
     }
 
     img {
-        padding: 32px 90px 32px 91px;
         width: 148px;
         height: 148px;
-        flex-shrink: 0;
-    }
-
-    .div-3 {
-        margin: 24px 0 81px 23px;
     }
 }
